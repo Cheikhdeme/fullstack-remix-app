@@ -4,7 +4,7 @@ import type {
 } from "@remix-run/node";
 import { authenticator } from "~/utils/auth.server";
 import { Form, useLoaderData } from "@remix-run/react";
-import { LoaderFunction } from "@remix-run/node";
+import type { LoaderFunction } from "@remix-run/node";
 import { createTask, getMyTasks, deleteTask } from "~/utils/tasks.server";
 import { Taskform } from "~/components/taskform";
 import { Tasklist, TaskListProps } from "~/components/tasklist";
